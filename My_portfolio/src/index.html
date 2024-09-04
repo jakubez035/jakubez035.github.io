@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="/styles/output.css" rel="stylesheet" />
+    <title>Tailwind Starter</title>
 </head>
-<body>
-    
+
+<body class="bg-white">
+    <header class="sticky top-0 z-50">
+        <nav class="bg-gray-900 p-2 font-bold">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="index.html" class="text-white hover:text-gray-300">Home</a></li>
+                <li><a href="profile.html" class="text-white hover:text-gray-300">Profile</a></li>
+                <li><a href="dashboard.html" class="text-white hover:text-gray-300">Dashboard</a></li>
+                <li><a href="faq.html" class="text-white hover:text-gray-300">FAQ</a></li>
+                <li><a href="blog.html" class="text-white hover:text-gray-300">Blog</a></li>
+                <li><a href="post.html" class="text-blue-300 hover:text-blue-500">Post</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="flex items-center justify-center">
+        <div class="relative w-full" style="height: 300px; opacity: 1;">
+            <img src="https://media.gcflearnfree.org/content/55e0730c7dd48174331f5164_01_17_2014/whatisacomputer_pc.jpg"  
+                 alt="Welcome Image" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-80">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="text-black text-4xl font-bold text-center">Welcome to my website</h1>
+            </div>
+        </div>
+    </section>
+    <main>
+        <article class="p-4">
+            <h1 class= "text-black text-center text-3xl font-bold">Paragraph 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur, magni repellat voluptatem quidem repudiandae? Cumque ducimus maiores voluptates eaque voluptatem earum, nostrum aliquid alias quibusdam quia voluptate harum quo?</p>
+        </article>
+
+        <article class="p-4">
+            <h1 class= "text-black text-center text-3xl font-bold">Paragrpah 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur, magni repellat voluptatem quidem repudiandae? Cumque ducimus maiores voluptates eaque voluptatem earum, nostrum aliquid alias quibusdam quia voluptate harum quo?</p>
+        </article>
+        
+        <section class="flex items-center justify-between mt-4 p-4">
+            <div class="w-1/2 flex items-center justify-center">
+                <div class="text-left">
+                    <h2 class="text-3xl font-bold mb-4 text-center">List</h2>
+                    <ul class="list-disc list-inside">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                        <li>List Item 4</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <img src="https://quickcampus.online/blog/wp-content/uploads/2024/03/female-student-listening-webinar-online_74855-6461.jpg" 
+                     alt="Right Image" 
+                     class="w-full h-auto object-cover">
+            </div>
+        </section>
+        
+        
+    </main>
 </body>
+
 </html>
