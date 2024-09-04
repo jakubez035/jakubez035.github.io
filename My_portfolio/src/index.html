@@ -24,15 +24,63 @@
     </header>
     
     <section class="flex items-center justify-center">
-        <div class="relative w-full" style="height: 300px; opacity: 1;">
-            <img src="https://media.gcflearnfree.org/content/55e0730c7dd48174331f5164_01_17_2014/whatisacomputer_pc.jpg"  
+        <div class="relative w-full overflow-hidden" style="height: 300px;">
+            <img id="welcomeImage" 
+                 src="https://media.gcflearnfree.org/content/55e0730c7dd48174331f5164_01_17_2014/whatisacomputer_pc.jpg"  
                  alt="Welcome Image" 
-                 class="absolute inset-0 w-full h-full object-cover opacity-80">
+                 class="absolute inset-0 w-full h-full object-cover opacity-80 transition-opacity duration-1000 ease-in-out">
             <div class="absolute inset-0 flex items-center justify-center">
                 <h1 class="text-black text-4xl font-bold text-center">Welcome to my website</h1>
             </div>
         </div>
     </section>
+    
+    <script>
+                // Array of images to rotate between
+        const images = [
+            "https://media.gcflearnfree.org/content/55e0730c7dd48174331f5164_01_17_2014/whatisacomputer_pc.jpg",
+            "https://cdn.thewirecutter.com/wp-content/media/2023/11/aio-computer-2048px-231515-3x2-1-1.jpg"
+        ];
+
+        // Reference to the image element
+        const welcomeImage = document.getElementById("welcomeImage");
+
+        let currentIndex = 0;
+
+        // Function to change the image with fading animation
+        function changeImage() {
+            // Fade out the current image
+            welcomeImage.classList.add("opacity-0");
+
+            // After the transition is done, update the image source
+            setTimeout(() => {
+                // Update the image source
+                currentIndex = (currentIndex + 1) % images.length;
+                welcomeImage.src = images[currentIndex];
+
+                // Fade the image back in
+                welcomeImage.classList.remove("opacity-0");
+                welcomeImage.classList.add("opacity-80");
+
+                // Ensure the opacity transition is applied correctly
+                setTimeout(() => {
+                    welcomeImage.classList.remove("opacity-80");
+                }, 1000); // This timeout should match the CSS transition duration
+            }, 1000); // This timeout should match the CSS transition duration
+        }
+
+        // Delay the initial fade-out
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                changeImage(); // Start the image change process after the delay
+                // Rotate image every 5 seconds
+                setInterval(changeImage, 5000);
+            }, 3000); // Delay of 3 seconds before the first fade-out
+        });
+
+    </script>
+    
+    
     <main>
         <article class="p-4">
             <h1 class= "text-black text-center text-3xl font-bold">Paragraph 1</h1>
