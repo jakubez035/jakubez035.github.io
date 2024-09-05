@@ -7,12 +7,20 @@
     @apply sticky top-0 z-50 bg-gray-900 p-2 font-bold;
 }
 
+.menu{
+    @apply flex justify-between px-5
+}
+
+.menu{
+    @apply text-white font-bold
+}
+
 .navbar ul {
-    @apply flex justify-center space-x-6;
+    @apply flex-1 flex justify-center space-x-6;
 }
 
 .navbar a {
-    @apply text-white hover:text-gray-300;
+    @apply text-white hover:text-gray-500;
 }
 
 .navbar a.active {
