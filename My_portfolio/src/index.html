@@ -51,6 +51,8 @@
         // Function to change the image with fading animation
         function changeImage() {
             // Fade out the current image
+            
+            welcomeImage.classList.remove("opacity-80");
             welcomeImage.classList.add("opacity-0");
 
             // After the transition is done, update the image source
@@ -62,11 +64,6 @@
                 // Fade the image back in
                 welcomeImage.classList.remove("opacity-0");
                 welcomeImage.classList.add("opacity-80");
-
-                // Ensure the opacity transition is applied correctly
-                setTimeout(() => {
-                    welcomeImage.classList.remove("opacity-80");
-                }, 1000); // This timeout should match the CSS transition duration
             }, 1000); // This timeout should match the CSS transition duration
         }
 
@@ -76,7 +73,7 @@
                 changeImage(); // Start the image change process after the delay
                 // Rotate image every 5 seconds
                 setInterval(changeImage, 5000);
-            }, 3000); // Delay of 3 seconds before the first fade-out
+            }, 5000); // Delay of 3 seconds before the first fade-out
         });
 
     </script>
