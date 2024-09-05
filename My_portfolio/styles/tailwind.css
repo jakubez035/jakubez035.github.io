@@ -52,3 +52,7 @@
 .slide-toggle.open {
     max-height: 200px; /* Set this to a value big enough to fit the content */
 }
+
+.dashboard-tables{
+    @apply mx-10 bg-white p-4 rounded-lg shadow-lg
+}
