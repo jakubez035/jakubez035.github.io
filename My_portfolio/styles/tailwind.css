@@ -26,3 +26,29 @@
 .navbar a.active {
     @apply text-blue-300 hover:text-blue-500;
 }
+
+.dashboard-q1-tables{
+    @apply bg-blue-50 p-4 rounded-lg shadow
+}
+
+.table-completed{
+    @apply bg-green-100
+}
+
+.table-pending{
+    @apply bg-yellow-100
+}
+
+.table-retake-required{
+    @apply bg-red-100
+}
+
+.slide-toggle {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.slide-toggle.open {
+    max-height: 200px; /* Set this to a value big enough to fit the content */
+}
