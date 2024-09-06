@@ -56,3 +56,27 @@
 .dashboard-tables{
     @apply mx-10 bg-white p-4 rounded-lg shadow-lg
 }
+
+#side-nav {
+    height: 100vh;
+    width: 160px;
+    @apply fixed;
+    z-index: 49;
+    left: 0;
+    @apply bg-gray-900;
+    overflow-x: hidden;
+    transition: transform 0.5s ease; /* Smooth transition for slide effect */
+    @apply text-left;
+    transform: translateX(-100%); /* Initially hidden off-screen */
+}
+
+
+#side-nav a {
+    @apply pl-7 py-2;
+    text-decoration: none;
+    @apply font-bold;
+    @apply text-white hover:text-gray-500;
+    @apply block;
+    transition: 0.3s;
+}
+

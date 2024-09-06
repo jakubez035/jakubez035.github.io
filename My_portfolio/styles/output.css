@@ -668,6 +668,10 @@ video {
   table-layout: auto;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .list-inside {
   list-style-position: inside;
 }
@@ -987,8 +991,45 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+#side-nav {
+  height: 100vh;
+  width: 160px;
+  position: fixed;
+  z-index: 49;
+  left: 0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  overflow-x: hidden;
+  transition: transform 0.5s ease;
+  /* Smooth transition for slide effect */
+  text-align: left;
+  transform: translateX(-100%);
+  /* Initially hidden off-screen */
+}
+
+#side-nav a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.75rem;
+  text-decoration: none;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+#side-nav a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+#side-nav a {
+  display: block;
+  transition: 0.3s;
+}
+
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
