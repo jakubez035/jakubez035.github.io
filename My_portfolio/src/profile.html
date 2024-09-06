@@ -12,7 +12,7 @@
 <body class="bg-white">
     <header class="navbar">
         <nav class="menu">
-            <h1 class="menu-icon">JH</h1>
+            <button class="menu-icon cursor-pointer" onclick="toggleNav()">JH</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
@@ -23,6 +23,13 @@
             </ul>
         </nav>
     </header>
+
+    <aside id="side-nav">
+        <a href="#">HZ Learn</a>
+        <a href="#">HZ Timetable</a>
+    </aside>
+
+    <script src="/scripts/sidenav.js"></script>
 
     <section class="flex items-center justify-between">
         <div class="text-center w-1/2">
