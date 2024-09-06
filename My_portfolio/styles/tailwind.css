@@ -57,6 +57,10 @@
     @apply mx-10 bg-white p-4 rounded-lg shadow-lg
 }
 
+.menu-icon{
+    @apply hover:text-gray-500
+}
+
 #side-nav {
     height: 100vh;
     width: 160px;
