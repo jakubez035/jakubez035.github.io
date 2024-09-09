@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/styles/output.css" rel="stylesheet" />
-    <title>Tailwind Starter</title>
+    <title>Jakub Holík</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="post.html" class="active">Post</a></li>
+                <li><a href="post.html">Post</a></li>
             </ul>
         </nav>
     </header>
@@ -79,99 +79,135 @@
         <h2 class="text-xl font-semibold mb-2">Quartile 1: Introduction to Computer Science</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Course: Program & Career Orientation (PCO) -->
-            <div class="dashboard-q1-tables">
+            <div class="dashboard-q1-tables mb-4">
                 <h3 class="text-lg font-bold mb-2">Program & Career Orientation (PCO)</h3>
                 <table class="table-auto w-full">
                     <thead>
                         <tr>
                             <th class="px-4 py-2">Test</th>
-                            <th class="px-4 py-2">Grade</th>
+                            <th class="px-4 py-2">Credits</th>
                             <th class="px-4 py-2">Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-completed">
-                            <td class="border px-4 py-2">Portfolio</td>
-                            <td class="border px-4 py-2">7.5</td>
-                            <td class="border px-4 py-2 text-green-600">Completed</td>
-                        </tr>
                         <tr class="table-pending">
-                            <td class="border px-4 py-2">Exam</td>
-                            <td class="border px-4 py-2">-</td>
+                            <td class="border px-4 py-2">Interview</td>
+                            <td class="border px-4 py-2">2.5</td>
                             <td class="border px-4 py-2 text-yellow-600">Pending</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-
+    
             <!-- Course: Computer Science Basics (CSB) -->
-            <div class="dashboard-q1-tables">
+            <div class="dashboard-q1-tables mb-4">
                 <h3 class="text-lg font-bold mb-2">Computer Science Basics (CSB)</h3>
                 <table class="table-auto w-full">
                     <thead>
                         <tr>
                             <th class="px-4 py-2">Test</th>
-                            <th class="px-4 py-2">Grade</th>
+                            <th class="px-4 py-2">Credits</th>
                             <th class="px-4 py-2">Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-completed">
-                            <td class="border px-4 py-2">Exam</td>
-                            <td class="border px-4 py-2">8.0</td>
-                            <td class="border px-4 py-2 text-green-600">Completed</td>
-                        </tr>
-                        <tr class="table-retake-required">
-                            <td class="border px-4 py-2">Assignment</td>
-                            <td class="border px-4 py-2">4.5</td>
-                            <td class="border px-4 py-2 text-red-600">Retake Required</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Course: Programming Basics (PB) -->
-            <div class="dashboard-q1-tables">
-                <h3 class="text-lg font-bold mb-2">Programming Basics (PB)</h3>
-                <table class="table-auto w-full">
-                    <thead>
-                        <tr>
-                            <th class="px-4 py-2">Test</th>
-                            <th class="px-4 py-2">Grade</th>
-                            <th class="px-4 py-2">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-completed">
-                            <td class="border px-4 py-2">Assignment 1</td>
-                            <td class="border px-4 py-2">6.0</td>
-                            <td class="border px-4 py-2 text-green-600">Completed</td>
-                        </tr>
                         <tr class="table-pending">
-                            <td class="border px-4 py-2">Assignment 2</td>
-                            <td class="border px-4 py-2">-</td>
+                            <td class="border px-4 py-2">Exam</td>
+                            <td class="border px-4 py-2">5.0</td>
                             <td class="border px-4 py-2 text-yellow-600">Pending</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-
-            <!-- Course: Personal Professional Development (PPD-E) -->
-            <div class="dashboard-q1-tables">
-                <h3 class="text-lg font-bold mb-2">Personal Professional Development (PPD-E)</h3>
+    
+            <!-- Course: Programming Basics (PB) -->
+            <div class="dashboard-q1-tables mb-4">
+                <h3 class="text-lg font-bold mb-2">Programming Basics (PB)</h3>
                 <table class="table-auto w-full">
                     <thead>
                         <tr>
                             <th class="px-4 py-2">Test</th>
-                            <th class="px-4 py-2">Grade</th>
+                            <th class="px-4 py-2">Credits</th>
                             <th class="px-4 py-2">Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-completed">
-                            <td class="border px-4 py-2">Reflection Paper</td>
-                            <td class="border px-4 py-2">7.0</td>
-                            <td class="border px-4 py-2 text-green-600">Completed</td>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Exam</td>
+                            <td class="border px-4 py-2">5.0</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="dashboard-tables mb-8">
+        <!-- Quarter 2 -->
+        <h2 class="text-xl font-semibold mb-2">Quartile 2</h2>
+        <div class="grid">
+            <!-- Course: Object-Oriented Programming -->
+            <div class="dashboard-q1-tables">
+                <h3 class="text-lg font-bold mb-2">Object-Oriented Programming</h3>
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Test</th>
+                            <th class="px-4 py-2">Credits</th>
+                            <th class="px-4 py-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Group project</td>
+                            <td class="border px-4 py-2" rowspan="2">10</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Exam</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dashboard-tables mb-8">
+        <!-- Quarter 3 -->
+        <h2 class="text-xl font-semibold mb-2">Quartile 3</h2>
+        <div class="grid">
+            <!-- Course: Object-Oriented Programming -->
+            <div class="dashboard-q1-tables">
+                <h3 class="text-lg font-bold mb-2">Framework project 1</h3>
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Test</th>
+                            <th class="px-4 py-2">Credits</th>
+                            <th class="px-4 py-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Exam</td>
+                            <td class="border px-4 py-2" rowspan="4">10</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Database</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Group project</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Individual project</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
                         </tr>
                     </tbody>
                 </table>
@@ -180,9 +216,105 @@
     </div>
 
     <div class="dashboard-tables mb-8">
-        <!-- Future Quarters -->
-        <h2 class="text-xl font-semibold mt-8 mb-2">Future Quarters (Quartile 2, 3, 4)</h2>
-        <p class="text-sm text-gray-600">Details for future quarters will be added later.</p>
+        <!-- Quarter 4 -->
+        <h2 class="text-xl font-semibold mb-2">Quartile 4</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Course: Object-Oriented Programming -->
+            <div class="dashboard-q1-tables">
+                <h3 class="text-lg font-bold mb-2">Framework project 2</h3>
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Test</th>
+                            <th class="px-4 py-2">Credits</th>
+                            <th class="px-4 py-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Presentation</td>
+                            <td class="border px-4 py-2" rowspan="3">10</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Report</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">IT Portfolio</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="dashboard-q1-tables">
+                <h3 class="text-lg font-bold mb-2">Business IT Consultancy Basics</h3>
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Test</th>
+                            <th class="px-4 py-2">Credits</th>
+                            <th class="px-4 py-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-pending">
+                            <td class="border px-4 py-2">Video</td>
+                            <td class="border px-4 py-2">2.5</td>
+                            <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course: Personal Professional Development (PPD-E) -->
+    <div class="dashboard-tables mb-8">
+        <h3 class="text-xl font-semibold mt-8 mb-2">Personal Professional Development (PPD-E)</h3>
+        <table class="table-auto w-full">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">Test</th>
+                    <th class="px-4 py-2">Credits</th>
+                    <th class="px-4 py-2">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-pending">
+                    <td class="border px-4 py-2">Interview</td>
+                    <td class="border px-4 py-2">12.5</td>
+                    <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Course: IT Personality -->
+    <div class="dashboard-tables mb-8">
+        <h3 class="text-xl font-semibold mt-8 mb-2">Personal Professional Development (PPD-E)</h3>
+        <table class="table-auto w-full">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">Test</th>
+                    <th class="px-4 py-2">Credits</th>
+                    <th class="px-4 py-2">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-pending">
+                    <td class="border px-4 py-2">Project week</td>
+                    <td class="border px-4 py-2">1.25</td>
+                    <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                </tr>
+                <tr class="table-pending">
+                    <td class="border px-4 py-2">International week</td>
+                    <td class="border px-4 py-2">1.25</td>
+                    <td class="border px-4 py-2 text-yellow-600">Pending</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script>

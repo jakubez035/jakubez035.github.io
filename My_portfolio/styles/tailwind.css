@@ -27,9 +27,7 @@
     @apply text-blue-300 hover:text-blue-500;
 }
 
-.dashboard-q1-tables{
-    @apply bg-blue-50 p-4 rounded-lg shadow
-}
+
 
 .table-completed{
     @apply bg-green-100
@@ -44,17 +42,21 @@
 }
 
 .slide-toggle {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    @apply translate-y-[-100%] opacity-0 duration-500 ease-in-out overflow-hidden;
+    @apply h-0;
 }
 
 .slide-toggle.open {
-    max-height: 200px; /* Set this to a value big enough to fit the content */
+    @apply translate-y-[0%] opacity-100;
+    @apply h-auto mb-4;
 }
 
 .dashboard-tables{
     @apply mx-10 bg-white p-4 rounded-lg shadow-lg
+}
+
+.dashboard-q1-tables{
+    @apply bg-blue-50 p-4 rounded-lg shadow
 }
 
 .menu-icon{

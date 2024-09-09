@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/styles/output.css" rel="stylesheet" />
-    <title>Tailwind Starter</title>
+    <title>Jakub Holík</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="post.html" class="active">Post</a></li>
+                <li><a href="post.html">Post</a></li>
             </ul>
         </nav>
     </header>
@@ -28,23 +28,65 @@
         <a href="#">HZ Learn</a>
         <a href="#">HZ Timetable</a>
     </aside>
-
+ 
     <script src="/scripts/sidenav.js"></script>
 
     <h1 class="text-center p-4 font-bold text-3xl">FAQ</h1>
 
+    <!--Question 1-->
     <div class="justify-center flex">
-        <button onclick="toggleAnswer()" class="border-2 px-4 font-bold rounded">Question 1</button>
+        <button onclick="toggleAnswer('answer')" class="border-2 px-4 font-bold rounded">Question 1</button>
     </div>
 
     <div class="justify-center flex mt-4">
-        <p id="answer" class="text-center slide-toggle">This is the answer to Question 1!</p>
+        <p id="answer" class="text-center h-auto slide-toggle">This is the answer to Question 1!</p>
+    </div>
+
+    <!--Question 2-->
+    <div class="justify-center flex">
+        <button onclick="toggleAnswer('answer-2')" class="border-2 px-4 font-bold rounded">Question 2</button>
+    </div>
+
+    <div class="justify-center flex mt-4">
+        <p id="answer-2" class="text-center h-auto slide-toggle">This is the answer to Question 2!</p>
+    </div>
+
+    <!--Question 3-->
+    <div class="justify-center flex">
+        <button onclick="toggleAnswer('answer-3')" class="border-2 px-4 font-bold rounded">Question 3</button>
+    </div>
+
+    <div class="justify-center flex mt-4">
+        <p id="answer-3" class="text-center h-auto slide-toggle">This is the answer to Question 3!</p>
+    </div>
+
+    <!--Question 4-->
+    <div class="justify-center flex">
+        <button onclick="toggleAnswer('answer-4')" class="border-2 px-4 font-bold rounded">Question 4</button>
+    </div>
+
+    <div class="justify-center flex mt-4">
+        <p id="answer-4" class="text-center h-auto slide-toggle">This is the answer to Question 4!</p>
+    </div>
+
+    <!--Question 5-->
+    <div class="justify-center flex">
+        <button onclick="toggleAnswer('answer-5')" class="border-2 px-4 font-bold rounded">Question 5</button>
+    </div>
+
+    <div class="justify-center flex mt-4">
+        <p id="answer-5" class="text-center h-auto slide-toggle">This is the answer to Question 5!</p>
+    </div>
+
+    <div class="flex">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum suscipit qui iste ducimus explicabo ad illo reprehenderit, a, alias iusto, atque et maiores voluptatem fuga ratione. Molestiae repudiandae dicta voluptate.</p>
     </div>
 
     <script>
-        function toggleAnswer() {
-            const answerElement = document.getElementById('answer');
-            answerElement.classList.toggle('open'); // Toggle the 'open' class to trigger the sliding effect
+        // Function to toggle visibility based on the answer ID
+        function toggleAnswer(answerId) {
+            const answerElement = document.getElementById(answerId);
+            answerElement.classList.toggle('open'); // Toggle the 'open' class to show or hide the answer
         }
     </script>
 </body>
