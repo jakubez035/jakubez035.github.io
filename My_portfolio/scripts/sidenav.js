@@ -9,6 +9,13 @@ function toggleNav() {
     }
 }
 
+
+// This will add target="_blank" to all <a> tags inside the #side-nav element
+document.querySelectorAll('#side-nav a').forEach(function(anchor) { //Anchor is an anonymous function
+    anchor.setAttribute('target', '_blank');
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Get the current page's pathname, making sure to get only the last part of the URL
     const currentPath = window.location.pathname.split("/").pop();
