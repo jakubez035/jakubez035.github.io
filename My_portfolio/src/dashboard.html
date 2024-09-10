@@ -12,7 +12,7 @@
 <body>
     <header class="navbar">
         <nav class="menu">
-            <button class="menu-icon cursor-pointer" onclick="toggleNav()">JH</button>
+            <button class="menu-icon" onclick="toggleNav()">JH</button>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
@@ -31,11 +31,11 @@
 
     <script src="../scripts/sidenav.js"></script>
 
-    <h1 class="text-center mt-4 font-bold text-2xl">School year so far!</h1>
-
-    <div class="max-w-4xl mx-auto p-4">
-        <div class="bg-gray-300 w-full rounded-full h-5 relative overflow-hidden">
-            <div id="progressIndicator" class="bg-green-500 h-full rounded-full" style="width: 0%;"></div>
+    <!--School year progress bar-->
+    <h1 style="text-align: center; margin-top: 16px; font-weight: bold; font-size: 24px;">School year so far!</h1>
+    <div style="width: 90%; margin-left: auto; margin-right: auto; padding: 16px;">
+        <div style="background-color: #d1d5db; width: 100%; border-radius: 999px; height: 20px; position: relative; overflow: hidden;">
+            <div id="progressIndicator" style="width: 0%; height: 100%; background-color: #22c55e;"></div>
         </div>
     </div>
 
@@ -59,23 +59,21 @@
         });
     </script>
 
-    <div class="dashboard-tables mb-8">
-        <h1 class="text-2xl font-bold mb-4">Study Monitor</h1>
+    <!-- Progress Overview -->
+    <div class="dashboard-tables">
+        <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 16px;">Study Monitor</h1>
 
-
-        <!-- Progress Overview -->
-        <div class="mb-6">
-            <p class="text-lg font-semibold">Total Credits Earned: <span id="total-credits"
-                    class="text-green-600">0</span> / 60 EC</p>
+        <div>
+            <p class="text-lg font-semibold">Total Credits Earned: <span id="total-credits" style="color: #16a34a;">20</span> / 60 EC</p>
             <p class="text-sm text-gray-600">NBSA Boundary: 45 EC</p>
-            <div class="w-full bg-gray-200 rounded-full h-4 mt-2">
-                <div class="bg-green-600 h-4 rounded-full" style="width: 0%;" id="total-credits-progress-bar"></div>
+            <div style="width: 100%; background-color: #e5e7eb; border-radius: 999px; height: 20px; margin-top: 8px; overflow: hidden; ">
+                <div style="width: 0%; background-color: #16a34a; height: 100%;" id="total-credits-progress-bar"></div>
             </div>
         </div>
     </div>
 
-    <div class="dashboard-tables mb-8">
-        <!-- Quarter 1 -->
+    <!-- Quarter 1 -->
+    <div class="dashboard-tables">
         <h2 class="text-xl font-semibold mb-2">Quartile 1: Introduction to Computer Science</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Course: Program & Career Orientation (PCO) -->
@@ -143,9 +141,8 @@
         </div>
     </div>
     
-
-    <div class="dashboard-tables mb-8">
-        <!-- Quarter 2 -->
+    <!-- Quarter 2 -->
+    <div class="dashboard-tables">
         <h2 class="text-xl font-semibold mb-2">Quartile 2</h2>
         <div class="grid">
             <!-- Course: Object-Oriented Programming -->
@@ -175,9 +172,8 @@
         </div>
     </div>
 
-
-    <div class="dashboard-tables mb-8">
-        <!-- Quarter 3 -->
+    <!-- Quarter 3 -->
+    <div class="dashboard-tables">
         <h2 class="text-xl font-semibold mb-2">Quartile 3</h2>
         <div class="grid">
             <!-- Course: Object-Oriented Programming -->
@@ -215,8 +211,8 @@
         </div>
     </div>
 
-    <div class="dashboard-tables mb-8">
-        <!-- Quarter 4 -->
+    <!-- Quarter 4 -->
+    <div class="dashboard-tables">
         <h2 class="text-xl font-semibold mb-2">Quartile 4</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Course: Object-Oriented Programming -->
@@ -271,7 +267,7 @@
     </div>
 
     <!-- Course: Personal Professional Development (PPD-E) -->
-    <div class="dashboard-tables mb-8">
+    <div class="dashboard-tables">
         <h3 class="text-xl font-semibold mt-8 mb-2">Personal Professional Development (PPD-E)</h3>
         <table class="table-auto w-full">
             <thead>
@@ -292,7 +288,7 @@
     </div>
 
     <!-- Course: IT Personality -->
-    <div class="dashboard-tables mb-8">
+    <div class="dashboard-tables">
         <h3 class="text-xl font-semibold mt-8 mb-2">Personal Professional Development (PPD-E)</h3>
         <table class="table-auto w-full">
             <thead>
@@ -317,6 +313,7 @@
         </table>
     </div>
 
+    <!--Credit script-->
     <script>
         const totalCreditsText = document.getElementById("total-credits").innerText; // Get the inner text of the span
         const totalCredits = parseFloat(totalCreditsText); // Convert the text to a number

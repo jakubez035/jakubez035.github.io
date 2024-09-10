@@ -9,10 +9,10 @@
     <title>Jakub Holík</title>
 </head>
 
-<body class="bg-white">
+<body style="background-color: white;">
     <header class="navbar">
         <nav class="menu">
-            <button class="menu-icon cursor-pointer" onclick="toggleNav()">JH</button>
+            <button class="menu-icon" onclick="toggleNav()">JH</button>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
@@ -31,28 +31,28 @@
 
     <script src="../scripts/sidenav.js"></script>
 
-    <section class="flex items-center justify-between">
-        <div class="text-center w-1/2">
+    <section style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="width: 50%; text-align: center;">
             <h1 class="text-6xl text-black font-bold p-3">Hello! I'm Jakub Holík</h1>
         </div>
-        <div class="w-1/2">
+        <div style="width: 50%;">
             <img src="../images/profile.png" 
-            class="w-full h-auto object-cover"
+            style="width: 100%; height: auto; object-fit: cover;"
             alt="My photo">
         </div>
     </section>
     <main>
-        <section class="flex justify-between">
-            <section class="w-3/4">
-                <p class="m-4">
+        <section style="display: flex; justify-content: space-between;">
+            <section style="width: 75%;">
+                <p style="margin: 16px;">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus tempora impedit explicabo aperiam architecto modi ipsa voluptates ut voluptate doloribus eos alias exercitationem et cupiditate sapiente, optio fugiat accusamus?
                 </p>
-                <p class="m-4">
+                <p style="margin: 16px;">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum expedita aspernatur delectus. Rem eaque facilis vitae sequi natus quam corrupti dignissimos exercitationem quidem laboriosam, inventore ut ipsam quasi ratione hic!
                 </p>
             </section>
-            <div class="flex m-4 w-1/4 items-center justify-center">
-                <ul class="list-disc list-inside text-center">
+            <div style="display: flex; margin: 16px; width: 25%; align-items: center; justify-content: center;">
+                <ul style="list-style-type: disc; list-style-position: inside; text-align: center;">
                     <li>A</li>
                     <li>B</li>
                     <li>C</li>
@@ -60,12 +60,12 @@
             </div>
         </section>
 
-        <hr class="h-0.5 bg-black w-3/4 rounded-sm my-5 mx-auto">
+        <hr style="height: 2px; background: black; width: 75%; border-radius: 2px; margin-top: 20px; margin-bottom: 20px; margin-right: auto; margin-left: auto;">
 
-        <div class="flex justify-center mb-5">
-            <ul class="flex space-x-10">
+        <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+            <ul style="display: flex;">
                 <li>Instagram</li>
-                <li>Git Hub</li>
+                <li style="margin-left: 2.5rem;">Git Hub</li>
             </ul>
         </div>
     </main>
