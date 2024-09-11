@@ -669,7 +669,7 @@ video {
   /* px-5 (horizontal padding) */
   padding-right: 5px;
   /* px-5 (horizontal padding) */
-  color: #ffffff;
+  color: white;
   /* text-white */
   font-weight: bold;
   /* font-bold */
@@ -925,3 +925,24 @@ video {
   }
 }
 
+footer{
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1f2937;
+  color: white;
+  font-weight: bold;
+}
+
+footer ul{
+  justify-content: center;
+  display: flex;
+}
+
+footer p{
+  padding-top: 20px;
+  font-size: 12px;
+  font-weight: lighter;
+  justify-content: center;
+  display: flex;
+}
