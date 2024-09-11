@@ -2,55 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* custom.css */
-
-/* Navbar styles */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 50; /* Adjusted to z-50 */
-    background-color: #1f2937; /* bg-gray-900 */
-    padding: 8px; /* p-2 */
-    font-weight: bold; /* font-bold */
-    width: 100%;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5px; /* px-5 (horizontal padding) */
-    padding-right: 5px; /* px-5 (horizontal padding) */
-    color: white; /* text-white */
-    font-weight: bold; /* font-bold */
-    width: 100%;
-}
-
-.navbar ul {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-}
-
-.navbar li {
-    margin-right: 24px; /* space-x-6 */
-}
-
-.navbar a {
-    color: #ffffff; /* text-white */
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: #6b7280; /* hover:text-gray-500 */
-}
-
-.navbar a.active {
-    color: #93c5fd; /* text-blue-300 */
-}
-
-.navbar a.active:hover {
-    color: #3b82f6; /* hover:text-blue-500 */
-}
 
 /* Table styles */
 .table-completed {
@@ -149,55 +100,6 @@
     border-width: 1px;
 }
 
-.menu-icon{
-    z-index: 1;
-    cursor: pointer;
-    padding-right: 16px;
-}
-
-/* Menu Icon styles */
-.menu-icon:hover {
-    color: #6b7280; /* hover:text-gray-500 */
-}
-
-/* Side Nav styles */
-#side-nav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 49;
-    left: 0;
-    background-color: #1f2937; /* bg-gray-900 */
-    overflow-x: hidden;
-    transition: transform 0.5s ease;
-    text-align: left; /* text-left */
-    transform: translateX(-100%); /* Initially hidden off-screen */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#side-nav a {
-    padding-left: 14px; /* pl-7 */
-    padding-right: 4px; /* py-2 */
-    padding-bottom: 10px;
-    text-decoration: none;
-    font-weight: bold; /* font-bold */
-    color: #ffffff; /* text-white */
-    display: flex;
-    transition: color 0.3s;
-}
-
-#side-nav a:hover {
-    color: #6b7280; /* hover:text-gray-500 */
-}
-
-.side-nav-image {
-    width: 1.5em;
-    height: 1.5em;
-    margin-right: 0.75em; /* mr-3 */
-}
-
 /* FAQ styles */
 .faq-questions {
     display: flex;
@@ -237,24 +139,4 @@
     }
 }
 
-footer{
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #1f2937;
-    color: white;
-    font-weight: bold;
-}
 
-footer ul{
-    justify-content: center;
-    display: flex;
-}
-
-footer p{
-    padding-top: 20px;
-    font-size: 12px;
-    font-weight: lighter;
-    justify-content: center;
-    display: flex;
-}
