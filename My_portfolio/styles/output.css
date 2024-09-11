@@ -660,6 +660,7 @@ video {
   /* p-2 */
   font-weight: bold;
   /* font-bold */
+  width: 100%;
 }
 
 .menu {
@@ -673,14 +674,13 @@ video {
   /* text-white */
   font-weight: bold;
   /* font-bold */
+  width: 100%;
 }
 
 .navbar ul {
   display: flex;
   flex: 1;
   justify-content: center;
-  margin-left: -24px;
-  /* Equivalent to space-x-6, using negative margin to achieve spacing */
 }
 
 .navbar li {
@@ -822,6 +822,7 @@ video {
 .menu-icon{
   z-index: 1;
   cursor: pointer;
+  padding-right: 16px;
 }
 
 /* Menu Icon styles */

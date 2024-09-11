@@ -12,6 +12,7 @@
     background-color: #1f2937; /* bg-gray-900 */
     padding: 8px; /* p-2 */
     font-weight: bold; /* font-bold */
+    width: 100%;
 }
 
 .menu {
@@ -21,13 +22,13 @@
     padding-right: 5px; /* px-5 (horizontal padding) */
     color: white; /* text-white */
     font-weight: bold; /* font-bold */
+    width: 100%;
 }
 
 .navbar ul {
     display: flex;
     flex: 1;
     justify-content: center;
-    margin-left: -24px; /* Equivalent to space-x-6, using negative margin to achieve spacing */
 }
 
 .navbar li {
@@ -151,6 +152,7 @@
 .menu-icon{
     z-index: 1;
     cursor: pointer;
+    padding-right: 16px;
 }
 
 /* Menu Icon styles */
