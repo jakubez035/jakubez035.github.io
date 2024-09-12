@@ -1,0 +1,43 @@
+/* Slide Toggle styles */
+.slide-toggle {
+    text-align: center;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+
+.slide-toggle.open {
+    text-align: center;
+    transform: translateY(0%);
+    opacity: 1;
+    height: auto;
+    margin-bottom: 16px; /* mb-4 */
+}
+
+/* FAQ styles */
+.faq-questions {
+    display: flex;
+    justify-content: center;
+}
+
+.faq-answers {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; /* mt-4 */
+}
+
+.faq-question-buttons {
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 4px;
+    padding-left: 4px; /* pl-1 */
+    padding-right: 4px; /* pr-1 */
+}
+
+.dashboard-tables-headings{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
