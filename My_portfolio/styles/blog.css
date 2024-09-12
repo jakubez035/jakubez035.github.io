@@ -1,0 +1,50 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* One column by default */
+    gap: 16px;
+}
+
+/* Media query for medium screens and larger */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* Four columns on medium screens and larger */
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+}
+
+.zoom-in{
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+
+.blog-image {
+    top: 15px;
+    width: 100%;
+    object-fit: fill;
+    transform: scale(1);
+    border-radius: inherit;
+    transition: transform 0.5s ease;
+}
+
+.blog-image:hover {
+    transform: scale(1.1);
+    border-radius: 8px;
+}
+
+
+
+.blog-names {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
