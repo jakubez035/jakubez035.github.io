@@ -6,38 +6,52 @@
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     height: 0;
     overflow: hidden;
+    background-color: #a6caff;
+    border-radius: 4px;
+    margin-top: 4px;
+    width: 90%;
+    z-index: -1;
 }
 
 .slide-toggle.open {
     text-align: center;
-    transform: translateY(0%);
+    transform: translateY(-10%);
     opacity: 1;
     height: auto;
     margin-bottom: 16px; /* mb-4 */
+    background-color: #a6caff;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 16px;
+    width: 90%;
+    z-index: -1;
+
+
 }
 
 /* FAQ styles */
 .faq-questions {
     display: flex;
     justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .faq-answers {
     display: flex;
     justify-content: center;
-    margin-top: 16px; /* mt-4 */
+    font-size: 24px;
+    margin-bottom: 16px;
+
 }
 
 .faq-question-buttons {
-    border-width: 1px;
     border-color: gray;
+    background-color:  #c4deff;
+    width: 90%;
     border-radius: 4px;
-    padding-left: 4px; /* pl-1 */
-    padding-right: 4px; /* pr-1 */
-}
+    padding: 4px;
+    box-shadow: 0 10px 15px -3px gray, 0 4px 6px -2px gray;
 
-.dashboard-tables-headings{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 8px;
+    
 }

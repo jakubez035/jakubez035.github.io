@@ -89,3 +89,10 @@
         grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens and larger */
     }
 }
+
+
+.dashboard-tables-headings{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}

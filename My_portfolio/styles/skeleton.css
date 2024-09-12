@@ -33,6 +33,7 @@ pre {
 }
 
 /* Button, input, textarea, select resets */
+
 button,
 input,
 select,
@@ -46,8 +47,8 @@ textarea {
   color: inherit;
   text-transform: none;
   background: none;
-  border: none;
 }
+
 
 /* List styling */
 ol,
