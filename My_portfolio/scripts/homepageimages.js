@@ -3,31 +3,24 @@ const images = [
     "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D"
 ];
 
-// Reference to the image element
 const welcomeImage = document.getElementById("welcomeImage");
 
 let currentIndex = 0;
 
-// Function to change the image with fading animation
 function changeImage() {
-    // Fade out the current image
 
     welcomeImage.style.opacity = "0.85";
     welcomeImage.style.opacity = "0"
 
-    // After the transition is done, update the image source
     setTimeout(() => {
-        // Update the image source
         currentIndex = (currentIndex + 1) % images.length;
         welcomeImage.src = images[currentIndex];
 
-        // Fade the image back in
         welcomeImage.style.opacity = "0";
         welcomeImage.style.opacity = "0.85";
     }, 1500);
 }
 
-// Delay the initial fade-out
 window.addEventListener('load', () => {
     setTimeout(() => {
         changeImage();

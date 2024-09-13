@@ -46,17 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the current page's pathname, making sure to get only the last part of the URL
     const currentPath = window.location.pathname.split("/").pop();
 
-    // Select all anchor tags within the navbar
     const navLinks = document.querySelectorAll('.navbar a');
 
-    // Loop through each nav link
     navLinks.forEach(function (link) {
-        // Compare the href attribute's last part (page name) with the current path
         if (link.getAttribute('href') === currentPath) {
-            // Add the 'active' class if it matches
             link.classList.add('active');
         }
     });

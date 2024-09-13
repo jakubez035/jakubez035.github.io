@@ -48,11 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleNav() {
     const nav = document.querySelector("aside");
 
-    // Check if the sidebar is already open or closed
     if (nav.style.transform === "translateX(0%)") {
-        nav.style.transform = "translateX(-100%)"; // Close the sidebar
+        nav.style.transform = "translateX(-100%)"; 
     } else {
-        nav.style.transform = "translateX(0%)"; // Open the sidebar
+        nav.style.transform = "translateX(0%)";
     }
 }
 

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const startDate = new Date('September 2, 2024');
     const endDate = new Date(startDate);
-    endDate.setDate(startDate.getDate() + 36 * 7); // 36 weeks later
+    endDate.setDate(startDate.getDate() + 36 * 7); 
 
     const updateProgressBar = () => {
         const now = new Date();
@@ -13,5 +13,5 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     updateProgressBar();
-    setInterval(updateProgressBar, 86400000); // Update every day
+    setInterval(updateProgressBar, 86400000); 
 });
