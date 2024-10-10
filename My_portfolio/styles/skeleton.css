@@ -33,7 +33,6 @@ pre {
 }
 
 /* Button, input, textarea, select resets */
-
 button,
 input,
 select,
@@ -48,7 +47,6 @@ textarea {
   text-transform: none;
   background: none;
 }
-
 
 /* List styling */
 ol,
@@ -73,7 +71,7 @@ th, td {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 15px; /* Width of the scrollbar */
+    width: 15px; 
 }
 
 ::-webkit-scrollbar-track {
@@ -83,9 +81,6 @@ th, td {
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(180deg, #ff0080, #3a0ca3); 
 }
-
-
-
 
 /* Navbar styles */
 .navbar {
@@ -119,7 +114,7 @@ th, td {
 }
 
 .navbar a {
-    color: #ffffff; 
+    color: white; 
     text-decoration: none;
 }
 

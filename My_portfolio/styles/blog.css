@@ -1,13 +1,13 @@
 main {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* One column by default */
+    grid-template-columns: repeat(1, 1fr); /* One column */
     gap: 16px;
 }
 
-/* Media query for medium screens and larger */
+/* Diff devices */
 @media (min-width: 768px) {
     main {
-        grid-template-columns: repeat(3, 1fr); /* Four columns on medium screens and larger */
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
     }
 }
 
