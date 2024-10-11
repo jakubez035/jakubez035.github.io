@@ -10,13 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let images;
 
+    /*Paths*/
     if (currentPath === "index.html") {
         images = ["./images/Instagram_Glyph_Gradient.svg", "./images/github-mark-white.svg"];
     } else {
         images = ["../images/Instagram_Glyph_Gradient.svg", "../images/github-mark-white.svg"];
     }
 
-    
+    /*Link and image creation*/
     images.forEach((element, index) => {
         const listItem = document.createElement("li");
 
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         footerList.appendChild(listItem);
     });
 
+    /*Adds margin to last element so theres some space between images*/
     footerList.lastElementChild.style.marginLeft = "40px";
 
     footer.appendChild(footerList);

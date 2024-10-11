@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const divider = document.createElement("div");
 
+    /* This part creates links and adds them to the devider with the suitable attributes*/
     names.forEach((element, index) => {
         const link = document.createElement("a");
         link.setAttribute("href", links[index]);
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     aside.appendChild(divider);
 
+    /* Creates HZ logo with a link*/
     const dividerImage = document.createElement("div");
     const imageLink = document.createElement("a");
     imageLink.setAttribute("href", "https://hz.nl/")
@@ -45,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
+/*This does the animation of the side nav*/
 function toggleNav() {
     const nav = document.querySelector("aside");
 

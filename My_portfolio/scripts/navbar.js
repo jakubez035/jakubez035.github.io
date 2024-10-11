@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    /*Adds the elemets that dont change*/
     const names = ["Home", "Profile", "Dashboard", "FAQ", "Blog"];
 
     const header = document.querySelector("header");
@@ -20,12 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let subSites;
 
+    /*These elements change depending on which side you are on*/
     if (currentPath === "index.html") {
         subSites = ["index.html", "./src/profile.html", "./src/dashboard.html", "./src/faq.html", "./src/blog.html"];
     } else {
         subSites = ["../index.html", "profile.html", "dashboard.html", "faq.html", "blog.html"];
     }
 
+    /*Adding paths*/
     names.forEach((element, index) => {
         const listItem = document.createElement("li");
 
@@ -45,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     header.appendChild(headerNav);
 });
 
+/*Adding an active class to the link we are currently on*/
 document.addEventListener('DOMContentLoaded', function () {
     const currentPath = window.location.pathname.split("/").pop();
 
