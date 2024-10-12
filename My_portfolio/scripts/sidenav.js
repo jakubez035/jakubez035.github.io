@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dividerImage = document.createElement("div");
     const imageLink = document.createElement("a");
     imageLink.setAttribute("href", "https://hz.nl/")
+    imageLink.setAttribute("target", "_blank"); 
 
     const image = document.createElement("img");
     
